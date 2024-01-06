@@ -7,7 +7,7 @@ const TaskCard = ({status, task, description, date}) => {
 
     return (
         <>
-            <div className="max-w-2xl mx-auto px-4 bg-white hover:bg-yellow-500 hover:text-indigo-700 rounded-lg">
+            <div className="max-w-2xl mx-auto px-4 bg-purple-700 hover:bg-yellow-500 hover:text-indigo-700 hover:shadow-2xl rounded-lg">
                 <div className="py-5 flex items-center justify-between">
                     <div className="flex gap-3 items-center">
 
