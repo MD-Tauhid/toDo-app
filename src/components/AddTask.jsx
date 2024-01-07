@@ -1,7 +1,9 @@
 import React from 'react';
 import AddTaskModal from './AddTaskModal';
+import { useForm } from 'react-hook-form';
 
 const AddTask = ({ modalTitle, setShowModal }) => {
+    const {register, handleSubmit} = useForm()
     const onSubmit = () => {
         console.log("submit button");
     }
@@ -9,7 +11,7 @@ const AddTask = ({ modalTitle, setShowModal }) => {
         <div>
             <AddTaskModal modalTitle={modalTitle} setShowModal={setShowModal}>
                 <div className="form-container">
-                    <form className="form" onSubmit={onSubmit}>
+                    <form className="form" onSubmit={handleSubmit(onSubmit)}>
                         <div className="form-group">
                             <label for="task">Task Name</label>
                             <input required="" name="task" id="task" type="text" />
