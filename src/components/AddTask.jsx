@@ -17,8 +17,8 @@ const AddTask = () => {
 
                             </textarea>
                         </div>
-                        <div className='flex flex-row gap-10 justify-center items-center'>
-                            <label htmlFor="date">Date</label>
+                        <div className='flex flex-row gap-10 justify-end items-center text-gray-400 font-semibold'>
+                            <label htmlFor="date" >Date :</label>
                             <input type="date" name="date" id="date" />
                         </div>
                         <button type="submit" className="form-submit-btn">Submit</button>

@@ -156,24 +156,28 @@
   margin-top: 8px;
   cursor: pointer;
   border-radius: 6px;
+  margin: 8px 0 0 auto;
 }
 
 .form-container .form-submit-btn:hover {
   background-color: #EAB308;
   box-shadow: 0 10px 20px #EAB308;
-  color: #ffcc3e;
+  color: #ffd358;
   font-weight: 800;
 }
 
 #date {
-  width: 100%;
+  width: 60%;
   padding: 12px 16px;
   border-radius: 8px;
-  color: #fff;
+  color: #a8a4a4;
   font-family: inherit;
   background-color: transparent;
   border: 1px solid #414141;
 }
-
+#date:focus{
+  outline: none;
+  border-color: #D4A138;
+}
 
 
