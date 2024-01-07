@@ -1,12 +1,15 @@
 import React from 'react';
 import AddTaskModal from './AddTaskModal';
 
-const AddTask = ({modalTitle, setShowModal}) => {
+const AddTask = ({ modalTitle, setShowModal }) => {
+    const onSubmit = () => {
+        console.log("submit button");
+    }
     return (
         <div>
             <AddTaskModal modalTitle={modalTitle} setShowModal={setShowModal}>
                 <div className="form-container">
-                    <form className="form">
+                    <form className="form" onSubmit={onSubmit}>
                         <div className="form-group">
                             <label for="task">Task Name</label>
                             <input required="" name="task" id="task" type="text" />
