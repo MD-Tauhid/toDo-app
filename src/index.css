@@ -39,6 +39,16 @@ h1 {
   line-height: 1.1;
 }
 
+::-webkit-scrollbar{
+  width: 7px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#EAB308, #282A5A);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #393a69;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

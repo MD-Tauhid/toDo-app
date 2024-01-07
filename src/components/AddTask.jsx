@@ -1,10 +1,10 @@
 import React from 'react';
 import AddTaskModal from './AddTaskModal';
 
-const AddTask = () => {
+const AddTask = ({modalTitle, setShowModal}) => {
     return (
         <div>
-            <AddTaskModal>
+            <AddTaskModal modalTitle={modalTitle} setShowModal={setShowModal}>
                 <div className="form-container">
                     <form className="form">
                         <div className="form-group">

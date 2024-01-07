@@ -5,8 +5,8 @@ import { CgClose } from "react-icons/cg";
 const AddTaskModal = ({ children = null, modalTitle = '', setShowModal }) => {
     return (
         <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none border-none focus:outline-none bg-black/40 backdrop-blur-sm">
-            <div className="relative w-auto my-6 ">
-                <div className="border-0  shadow-lg relative flex flex-col lg:w-[60vw] w-[90vw] max-h-[500px] overflow-y-auto bg-secondary border-none outline-none focus:outline-none">
+            <div className="relative w-auto my-6">
+                <div className="border-0  shadow-lg relative flex flex-col lg:w-[60vw] w-[90vw] max-h-[500px] overflow-y-auto bg-secondary rounded-lg border-none outline-none focus:outline-none">
                     <div className="bg-third dark:bg-darkPrimary  p-3 border-none">
                         <div className="relative">
                             <h1 className="text-center text-gray-700 dark:text-gray-400 text-[24px] font-[600] uppercase border-none">
