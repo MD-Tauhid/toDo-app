@@ -14,7 +14,7 @@ function App() {
     <>
       <div>
         <button
-          className='bg-yellow-500 rounded-lg font-normal hover:shadow-lg hover:shadow-third text-gray-600 py-2 px-6 my-10'
+          className='hover:bg-yellow-500 bg-yellow-600 rounded-lg font-normal hover:shadow-lg hover:shadow-third text-sky-600 py-2 px-6 my-10'
           type="button"
           onClick={()=>setShowModal(true)}
         >
