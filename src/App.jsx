@@ -13,7 +13,6 @@ function App() {
     <>
       <div>
         <AddTask></AddTask>
-        <AddTaskModal/>
       </div>
       <div>
         <button className='bg-yellow-500 rounded-lg font-normal hover:shadow-lg hover:shadow-third text-gray-600 py-2 px-6 my-10' type="button">Add Task</button>

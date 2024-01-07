@@ -49,7 +49,7 @@
 
 /* Form css */
 .form-container {
-  width: 400px;
+  width: 100%;
   background: linear-gradient(#282A5A, #383d52) padding-box,
               linear-gradient(145deg, transparent 35%,#D4A138, #D4A138) border-box;
   border: 2px solid transparent;
@@ -99,9 +99,9 @@
 .form-container .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: #717171;
+  color: #a8a4a4;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .form-container .form-group input {
@@ -161,6 +161,18 @@
 .form-container .form-submit-btn:hover {
   background-color: #EAB308;
   box-shadow: 0 10px 20px #EAB308;
+  color: #ffcc3e;
+  font-weight: 800;
+}
+
+#date {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
 }
 
 
