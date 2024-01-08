@@ -3,7 +3,7 @@ import { MdDelete } from "react-icons/md";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { CiCalendarDate, CiMenuKebab } from "react-icons/ci";
 
-const TaskCard = ({status, task, description, date}) => {
+const TaskCard = ({status, title, description, date}) => {
 
     return (
         <>

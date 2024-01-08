@@ -3,9 +3,22 @@ import AddTaskModal from './AddTaskModal';
 import { useForm } from 'react-hook-form';
 
 const AddTask = ({ modalTitle, setShowModal }) => {
-    const { register, handleSubmit } = useForm()
+    const { register, handleSubmit,reset } = useForm()
     const onSubmit = (data) => {
-        console.log(data);
+        data.id = Date.now().toString(36) + Math.random().toString(36).substr(2);
+        // console.log(data);
+        let arr = new Array();
+        const taskData = JSON.parse(localStorage.getItem("task"));
+        if(taskData){
+            arr = [...taskData, data];
+        }
+        else{
+            arr = [data]
+        }
+
+        localStorage.setItem("task",JSON.stringify(arr));
+        reset();
+        setShowModal(false);
     }
     return (
         <div>
