@@ -18,7 +18,7 @@ const AddTask = ({ modalTitle, setShowModal }) => {
 
         localStorage.setItem("task",JSON.stringify(arr));
         reset();
-        setShowModal(false);
+        // setShowModal(false);
     }
     return (
         <div>
@@ -26,8 +26,8 @@ const AddTask = ({ modalTitle, setShowModal }) => {
                 <div className="form-container">
                     <form className="form" onSubmit={handleSubmit(onSubmit)}>
                         <div className="form-group">
-                            <label for="task">Task Name</label>
-                            <input {...register("task", { required: true })} name="task" id="task" type="text" />
+                            <label for="title">Task Name</label>
+                            <input {...register("title", { required: true })} name="title" id="title" type="text" />
                         </div>
                         <div className="form-group">
                             <label for="textarea">Task Description</label>

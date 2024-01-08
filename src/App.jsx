@@ -24,8 +24,8 @@ function App() {
       </div>
       <div>
         {
-          tasks.map(task=>{
-            return <TaskCard/>
+          tasks?.map(task=>{
+            return <TaskCard key={task?.id} data={task}/>
           })
         }
         

@@ -3,7 +3,7 @@ import { MdDelete } from "react-icons/md";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { CiCalendarDate, CiMenuKebab } from "react-icons/ci";
 
-const TaskCard = ({status, title, description, date}) => {
+const TaskCard = ({ data, status }) => {
 
     return (
         <>
@@ -12,16 +12,20 @@ const TaskCard = ({status, title, description, date}) => {
                     <div className="flex gap-3 items-center">
 
                         <div className='text-start'>
-                            <span className="block text-lg font-semibold">Task name</span>
-                            <span className="block text-sm">Write your description</span>
+                            <span className="block text-lg font-semibold">{data?.title}</span>
+                            <span className="block text-sm">{data?.description}</span>
                             <span className="text-sm flex items-center gap-2 mt-4">
-                                <CiCalendarDate className='text-xl' /> 10/12/23
+                                <CiCalendarDate className='text-xl' /> {data?.date}
                             </span>
                         </div>
 
                     </div>
                     <div className='flex gap-4 items-center'>
-                        <p className='bg-cyan-200 opacity-60 text-gray-600 px-4 rounded-full'>status</p>
+                        <p className='bg-cyan-200 opacity-60 text-gray-600 px-4 rounded-full'>
+                            <span className={`${status === "complete" ? "text-green-600" : "text-orange-700"}`}>
+                                {status ? status : "pending"}
+                            </span>
+                        </p>
                         <button>
                             <MdDelete className='text-xl' />
                         </button>
