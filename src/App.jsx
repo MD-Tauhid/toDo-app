@@ -14,7 +14,7 @@ function App() {
   // console.log(tasks)
   return (
     <>
-      <section className='flex flex-row'>
+      <section className='flex flex-row justify-around items-center'>
         <div className='w-full'>
           <div>
             <button
